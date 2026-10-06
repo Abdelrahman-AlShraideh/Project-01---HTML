@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs</title>
+
+</head>
+
+<body>
+<form>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required minlength="3">
+
+<br><br>
+
+<label for="email">Email</label>
+<input id="email" type="email" name="email" required>
+
+<br><br>
+
+ <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+<br><br>
+
+ <p>Choose your level:</p>
+
+        <label for="beginner">Beginner</label>
+        <input
+            type="radio"
+            id="beginner"
+            name="level"
+            value="beginner"
+            required
+        >
+
+        <label for="intermediate">Intermediate</label>
+        <input
+            type="radio"
+            id="intermediate"
+            name="level"
+            value="intermediate"
+        >
+
+        <label for="advanced">Advanced</label>
+        <input
+            type="radio"
+            id="advanced"
+            name="level"
+            value="advanced"
+        >
+
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="jordan">Jordan</option>
+            <option value="saudi-arabia">Saudi Arabia</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">About You:</label>
+        <br>
+        <textarea
+            id="message"
+            name="message"
+            minlength="10"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <label for="agreement">
+            I agree to the terms and conditions
+        </label>
+        <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+        >
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+</body>
+
+
+</html>
+            
